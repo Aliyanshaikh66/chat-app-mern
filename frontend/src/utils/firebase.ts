@@ -1,4 +1,4 @@
-// import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDDkH9pqIcdWmRlXHdyC2G0z0Lhlej5dCw",
@@ -10,4 +10,4 @@ const firebaseConfig = {
     measurementId: "G-0ZCEWD5WWJ"
 };
 
-// export const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
