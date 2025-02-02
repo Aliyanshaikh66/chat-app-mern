@@ -5,7 +5,7 @@ const firebaseConfig = {
     authDomain: "links-sharing-b9c2a.firebaseapp.com",
     projectId: "links-sharing-b9c2a",
     storageBucket: "links-sharing-b9c2a.appspot.com",
-    messagingSenderId: "606062782904",
+    
     
    
 };
