@@ -19,14 +19,14 @@ export const googleLoginController = async (req, res, next) => {
 
         const user = await userModel?.findOne({ email: googleUser?.data?.email }).exec()
 
-        // if (!user) {
+        if (!user) {
 
-        //     const userPayload = {
-        //         userName: googleUser?.data?.name,
-        //         email: googleUser?.data?.email?.toLowerCase(),
-        //         profilePhoto: googleUser?.data?.picture,
-        //         isEmailVerified: true,
-        //     }
+            const userPayload = {
+                userName: googleUser?.data?.name,
+                email: googleUser?.data?.email?.toLowerCase(),
+                profilePhoto: googleUser?.data?.picture,
+                isEmailVerified: true,
+            }
 
             const signupResp = await userModel?.create(userPayload)
 
