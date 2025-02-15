@@ -10,9 +10,7 @@ export default function AlertMui({ status, text }: any) {
         vertical: 'top',
         horizontal: 'center',
     });
-
     const { open } = state;
-
     return (
         <div className='flex justify-center w-[100%] fixed top-[2em] z-10'>
             <Snackbar
